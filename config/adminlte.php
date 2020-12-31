@@ -273,6 +273,20 @@ return [
                 ],
             ],
         ],
+        [
+            'text'    => 'Products by region',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Products by region',
+                    'url'  => '/productsbyregion/index',
+                ],
+                [
+                    'text' => 'Create',
+                    'url'  => '/productsbyregion/create',
+                ],
+            ],
+        ],
     ],
 
     /*

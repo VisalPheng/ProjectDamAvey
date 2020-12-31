@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProductsRegionController;
+use App\Http\Controllers\ProductsByRegionController;
+
 
 
 /*
@@ -17,13 +19,10 @@ use App\Http\Controllers\ProductsRegionController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.homepage');
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 //Products
 Route::middleware('auth')->prefix('/products')->group(function(){
     Route::get('/index',[ProductsController::class,'index'])->name('products.index');
@@ -43,4 +42,13 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::get('/edit/{id}',[ProductsRegionController::class,'edit'])->name('productsregion.edit');
     Route::put('/update/{id}',[ProductsRegionController::class,'update'])->name('productsregion.update');
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
+});
+
+
+Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
+    Route::get('/index',[ProductsByRegionController::class,'index'])->name('productsbyregion.index');
+    Route::get('/create',[ProductsByRegionController::class,'create'])->name('productsbyregion.create');
+    Route::post('/store',[ProductsByRegionController::class,'store'])->name('productsbyregion.store');
+    Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
+
 });

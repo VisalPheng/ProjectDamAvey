@@ -7,7 +7,7 @@
 
 @section('content')
     <div class="container">
-      <div class="row">   
+      <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h1>Create Products by region</h1>
             @if(Session::has('success'))
@@ -21,17 +21,17 @@
                     <label for="title">Title <span class="require"></label>
                     <input type="text" class="form-control" id="pname" name="name" />
                 </div>
-                
+
                 <div class="form-group">
                     <label for="description">Description</label>
                     <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
                 </div>
-                
+
                 <div class="form-group">
                   <label for="pimg">Products Image</label>
                   <input type="file" class="form-control-file" name="img_url" id="pimage">
                 </div>
-                
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">
                         Create
@@ -40,10 +40,10 @@
                         Cancel
                     </button>
                 </div>
-                
+
             </form>
         </div>
-        
+
       </div>
     </div>
 @stop

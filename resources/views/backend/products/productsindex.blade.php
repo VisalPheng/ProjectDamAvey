@@ -24,6 +24,7 @@
             <th>Image</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Region ID</th>
             <th>Action</th>
         </tr>
         @foreach ($allproducts as $products)
@@ -34,6 +35,7 @@
             </td>
             <td>{{$products->name}}</td>
             <td>{{$products->description}}</td>
+            <td>{{$products->productsbyregion_id}}</td>
             <td width="300px">
                 <a href="{{ route('products.detail',$products->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('products.edit',$products->id) }}" class="btn btn-primary ">Edit</a>

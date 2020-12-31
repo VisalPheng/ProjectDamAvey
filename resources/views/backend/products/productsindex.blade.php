@@ -34,14 +34,15 @@
             </td>
             <td>{{$products->name}}</td>
             <td>{{$products->description}}</td>
-            <td width="200px">
+            <td width="300px">
+                <a href="{{ route('products.detail',$products->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('products.edit',$products->id) }}" class="btn btn-primary ">Edit</a>
                 <a href="{{ route('products.delete',$products->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>
     @endforeach
     </table>
-    
+
 @stop
 
 @section('css')

@@ -84,7 +84,7 @@ class ProductsRegionController extends Controller
 
         $productsregion->name = $request->input('name');
         $productsregion->description = $request->input('description');
-        
+
         if($request->hasfile('img_url')) {
             $img = $request->file('img_url');
             $extension = $img->getClientOriginalExtension();
@@ -110,7 +110,7 @@ class ProductsRegionController extends Controller
     {
         $productsregion = ProductsRegion::find($id);
         $productsregion->delete();
-    
+
         return redirect()->route('productsregion.index')->with('deleted', 'Product deleted successfully.');
     }
 }

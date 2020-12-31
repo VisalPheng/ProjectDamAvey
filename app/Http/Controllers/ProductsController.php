@@ -20,7 +20,7 @@ class ProductsController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * detail the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -54,13 +54,14 @@ class ProductsController extends Controller
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(products $products)
+    public function detail($id)
     {
-        //
+        $products = Products::find($id);
+        return view('backend.products.productdetail', ['products' =>$products]);
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * detail the form for editing the specified resource.
      *
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\Response
@@ -84,7 +85,7 @@ class ProductsController extends Controller
 
         $products->name = $request->input('name');
         $products->description = $request->input('description');
-        
+
         if($request->hasfile('img_url')) {
             $img = $request->file('img_url');
             $extension = $img->getClientOriginalExtension();
@@ -110,7 +111,7 @@ class ProductsController extends Controller
     {
         $products = Products::find($id);
         $products->delete();
-    
+
         return redirect()->route('products.index')->with('deleted', 'Product deleted successfully.');
     }
 }

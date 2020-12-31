@@ -3,10 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProductsRegionController;
+<<<<<<< HEAD
 use App\Http\Controllers\ProductsByRegionController;
 
+=======
+use App\Http\Controllers\HomeController;
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
 
-
+Auth::routes();
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,11 +22,38 @@ use App\Http\Controllers\ProductsByRegionController;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('frontend.homepage');
 });
 
 Auth::routes();
+=======
+//Navbar
+    Route::get('/',[HomeController::class, 'home'])->name('home');
+    Route::get('/products',[HomeController::class, 'products'])->name('products');
+    Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
+//
+
+// Route::get('/', function () {
+//     return view('frontend.homepage');
+// });
+
+// Route::get('/productlist', function () {
+//     return view('frontend.productlist');
+// });
+
+// Route::get('/productregion', function () {
+//     return view('frontend.productregion');
+// });
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Frontend
+
+//
+
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
 //Products
 Route::middleware('auth')->prefix('/products')->group(function(){
     Route::get('/index',[ProductsController::class,'index'])->name('products.index');
@@ -33,6 +64,7 @@ Route::middleware('auth')->prefix('/products')->group(function(){
     Route::put('/update/{id}',[ProductsController::class,'update'])->name('products.update');
     Route::get('/delete/{id}',[ProductsController::class,'delete'])->name('products.delete');
 });
+//
 
 //ProductsRegion
 Route::middleware('auth')->prefix('/productsregion')->group(function(){
@@ -43,6 +75,7 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::put('/update/{id}',[ProductsRegionController::class,'update'])->name('productsregion.update');
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
+<<<<<<< HEAD
 
 
 Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
@@ -52,3 +85,6 @@ Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
     Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
 
 });
+=======
+//
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9

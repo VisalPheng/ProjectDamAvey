@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
 
     <script src="js/navbar.js"></script>
+<<<<<<< HEAD
     <title>ទំព័រដើម | ដាំអ្វី</title>
+=======
+    <title>
+        @yield('titlepage')
+    </title>
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
 </head>
 
 <body>
@@ -22,7 +28,11 @@
             <!-- Navbar -->
             <div class="container">
               <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<<<<<<< HEAD
                 <a class="navbar-brand" href=""><img src="img/damaveywhite.png" alt=""></a>
+=======
+                <a class="navbar-brand" href="{{ route('home') }}"><img src="img/damaveywhite.png" alt=""></a>
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,6 +40,7 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="home.html">ទំព័រដើម</a>
                         </li>
                         <li class="nav-item">
@@ -37,6 +48,15 @@
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="product-region.html">ដំណាំតាមតំបន់</a>
+=======
+                            <a class="nav-link" href="{{ route('home') }}">ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('products') }}">ប្រភេទដំណាំ</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{{ route('productsbyregion') }}">ដំណាំតាមតំបន់</a>
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="about-us.html">អំពីពួកយើង</a>
@@ -46,7 +66,10 @@
             </nav>
             </div>
             <!--  -->
+<<<<<<< HEAD
             @include ('frontend.carousel');
+=======
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
 
         </header>
     </section>
@@ -65,7 +88,11 @@
                       <div class="col-sm-6 col-md-3 item">
                           <h3>ទំនាក់ទំនងពួកយើង</h3>
                           <ul>
+<<<<<<< HEAD
                               <li>Email: <a href="mailto:info@damavey.com">info@damavey.com</a></li>
+=======
+                              <li><a href="mailto:info@damavey.com">info@damavey.com</a></li>
+>>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
                               <li><a>012 345 678</a></li>
                           </ul>
                       </div>

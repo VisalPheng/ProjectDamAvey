@@ -1,0 +1,34 @@
+/* Navbar */
+.navbar-dark{
+    background: transparent !important;
+}
+.navbar-dark.scrolled{
+    background: #282d32 !important;
+}
+.navbar{
+    padding: 3rem;
+}
+
+.navbar.scrolled{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+.nav-item { 
+    text-align: center;
+    font-size: 20px;
+    padding: 0 18px;
+}
+.nav-item a {
+    color: white !important;
+}
+/*  */
+/* Selection */
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(2, 113, 133);
+  }
+/*  */

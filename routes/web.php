@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProductsRegionController;
+use App\Http\Controllers\HomeController;
 
-
+Auth::routes();
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,13 +17,29 @@ use App\Http\Controllers\ProductsRegionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Navbar
+    Route::get('/',[HomeController::class, 'home'])->name('home');
+    Route::get('/products',[HomeController::class, 'products'])->name('products');
+    Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
+//
 
-Auth::routes();
+// Route::get('/', function () {
+//     return view('frontend.homepage');
+// });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/productlist', function () {
+//     return view('frontend.productlist');
+// });
+
+// Route::get('/productregion', function () {
+//     return view('frontend.productregion');
+// });
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Frontend
+
+//
 
 //Products
 Route::middleware('auth')->prefix('/products')->group(function(){
@@ -34,6 +51,7 @@ Route::middleware('auth')->prefix('/products')->group(function(){
     Route::put('/update/{id}',[ProductsController::class,'update'])->name('products.update');
     Route::get('/delete/{id}',[ProductsController::class,'delete'])->name('products.delete');
 });
+//
 
 //ProductsRegion
 Route::middleware('auth')->prefix('/productsregion')->group(function(){
@@ -44,3 +62,4 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::put('/update/{id}',[ProductsRegionController::class,'update'])->name('productsregion.update');
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
+//

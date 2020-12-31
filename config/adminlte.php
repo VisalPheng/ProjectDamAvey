@@ -260,7 +260,7 @@ return [
             ],
         ],
         [
-            'text'    => 'Products by region',
+            'text'    => 'Products by Region',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [

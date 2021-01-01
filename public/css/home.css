@@ -18,9 +18,9 @@
 @media  (max-width: 991px)  {
     
     .carousel-caption{
-        top: 73%;
+        top: 60%;
         text-align: center;
-       left: 40%;
+        left: 40%;
     }
     .carousel-caption p , h1{
         width: 200px;
@@ -32,6 +32,23 @@
         top: 68%;
         text-align: center;
        left: 37%;
+    }
+    .carousel-caption p {
+        width: 200px;
+        font-size: 18px;
+    }
+    .carousel-caption  h1 {
+        
+        width: 200px;
+        font-size: 20px;
+    }
+}    
+
+@media (max-width: 575px) {
+    .carousel-caption{
+        top: 40%;
+        text-align: center;
+       left: 33%;
     }
     .carousel-caption p {
         width: 200px;

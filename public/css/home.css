@@ -11,6 +11,38 @@
 .carousel-caption p{
     font-size: 20px;
 }
+.carousel-caption h1 {
+    font-weight: bold;
+}
+
+@media  (max-width: 991px)  {
+    
+    .carousel-caption{
+        top: 73%;
+        text-align: center;
+       left: 40%;
+    }
+    .carousel-caption p , h1{
+        width: 200px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .carousel-caption{
+        top: 68%;
+        text-align: center;
+       left: 37%;
+    }
+    .carousel-caption p {
+        width: 200px;
+        font-size: 18px;
+    }
+    .carousel-caption  h1 {
+        
+        width: 200px;
+        font-size: 20px;
+    }
+}       
 /*  */
 
 /* Card */
@@ -38,6 +70,12 @@
 .card-slide{
     margin-left: 5rem;
     margin-right: 5rem;
+}
+
+@media (max-width: 767px) {
+    .hide-card {
+        display: none;
+    }
 }
 /*  */
 

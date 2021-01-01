@@ -9,6 +9,25 @@
     padding: 3rem;
 }
 
+@media (max-width: 991px) {
+    .navbar {
+        padding-top: 7px;
+    }
+
+}
+@media (max-width: 767px) {
+    .navbar {
+        padding-top: 3px;
+    }
+
+    .navbar .nav-item {
+        font-size: 15px;
+    }
+
+ 
+}
+
+
 .navbar.scrolled{
     padding-top: 1rem;
     padding-bottom: 1rem;

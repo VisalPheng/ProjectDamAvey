@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>ដំណាំតាមតំបន់ | ដាំអ្វី</title>
+<title>ប្រភេទដំណាំ | ដាំអ្វី</title>
 @section('title', 'Products List')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">

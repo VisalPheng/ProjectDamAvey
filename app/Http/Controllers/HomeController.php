@@ -6,11 +6,6 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-<<<<<<< HEAD
-    public function index()
-    {
-        return view('frontend.home');
-=======
     /**
      * Create a new controller instance.
      *
@@ -39,6 +34,5 @@ class HomeController extends Controller
     public function productsbyregion()
     {
         return view('frontend.productregion');
->>>>>>> c10d972cdb7263abaf33bd2d641daf791f95b2b9
     }
 }

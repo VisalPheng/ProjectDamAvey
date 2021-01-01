@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <link rel="stylesheet" href="{{asset('css/navbar.css')}}">
-    <link rel="stylesheet" href="{{asset('css/homepage.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
 
     <script src="js/navbar.js"></script>
     <title>

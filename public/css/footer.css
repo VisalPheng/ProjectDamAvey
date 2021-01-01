@@ -30,6 +30,12 @@
     opacity:0.8;
   }
 
+  @media (max-width:575px) {
+    .footer-dark img{
+      width: 30%;
+  }
+  }
+
   @media (max-width:767px) {
     .footer-dark .item:not(.social) {
       text-align:center;

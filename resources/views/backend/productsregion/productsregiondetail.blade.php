@@ -8,7 +8,7 @@
 @section('content')
 
 <div class="card" style="width: 18rem;">
-      <h4 class="card-title">{{$region->name}}</h4>
+      <h4 class="card-title">{{$productsRegion->name}}</h4>
     </div>
 
     <table class="table table-bordered table-dark">
@@ -22,7 +22,7 @@
 
         @foreach ($allproducts as $products )
 
-        @if ($products->productsbyregion_id == $region->id)
+        @if ($products->productsbyregion_id == $productsRegion->id)
         <tr>
             <td>{{$products->id}}</td>
             <td width="300px">

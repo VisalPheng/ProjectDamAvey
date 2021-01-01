@@ -11,5 +11,5 @@ class ProductsRegion extends Model
     protected $table = 'productsregion';
     public $timestamps = true;
 
-    protected $fillable = ['user_id', 'name', 'description', 'img_url', 'created_at'];
+    protected $fillable = ['user_id', 'name', 'description', 'created_at'];
 }

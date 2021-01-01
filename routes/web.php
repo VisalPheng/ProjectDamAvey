@@ -59,16 +59,19 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::get('/index',[ProductsRegionController::class,'index'])->name('productsregion.index');
     Route::get('/create',[ProductsRegionController::class,'create'])->name('productsregion.create');
     Route::post('/store',[ProductsRegionController::class,'store'])->name('productsregion.store');
+    Route::get('/detail/{id}',[ProductsRegionController::class,'detail'])->name('productsregion.detail');
     Route::get('/edit/{id}',[ProductsRegionController::class,'edit'])->name('productsregion.edit');
     Route::put('/update/{id}',[ProductsRegionController::class,'update'])->name('productsregion.update');
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
 
 
-Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
-    Route::get('/index',[ProductsByRegionController::class,'index'])->name('productsbyregion.index');
-    Route::get('/create',[ProductsByRegionController::class,'create'])->name('productsbyregion.create');
-    Route::post('/store',[ProductsByRegionController::class,'store'])->name('productsbyregion.store');
-    Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
+// Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
+//     Route::get('/index',[ProductsByRegionController::class,'index'])->name('productsbyregion.index');
+//     Route::get('/create',[ProductsByRegionController::class,'create'])->name('productsbyregion.create');
+//     Route::post('/store',[ProductsByRegionController::class,'store'])->name('productsbyregion.store');
+//     Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
+//     Route::put('/update/{id}',[ProductsByRegionController::class,'update'])->name('productsbyregion.update');
+//     Route::get('/delete/{id}',[ProductsByRegionController::class,'delete'])->name('productsbyregion.delete');
 
-});
+// });

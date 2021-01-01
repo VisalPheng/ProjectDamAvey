@@ -26,12 +26,6 @@
                     <label for="description">Description</label>
                     <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
                 </div>
-
-                <div class="form-group">
-                  <label for="pimg">Products Image</label>
-                  <input type="file" class="form-control-file" name="img_url" id="pimage">
-                </div>
-
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">
                         Create

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ProductsRegion;
 use Illuminate\Http\Request;
+use App\Models\products;
 use Auth;
 
 class ProductsRegionController extends Controller
@@ -37,12 +38,8 @@ class ProductsRegionController extends Controller
      */
     public function store(Request $request)
     {
-        $img = $request->file('img_url');
-        $img_name = time().'.'.$img->extension();
-        $request->file('img_url')->move(public_path('images'),$img_name);
         $request['user_id']=Auth::id();
         $pro_arr = $request->toArray();
-        $pro_arr['img_url'] = $img_name;
         ProductsRegion::create($pro_arr);
 
         return redirect()->route('productsregion.create')->with('success', 'Product created successfully.');
@@ -54,9 +51,12 @@ class ProductsRegionController extends Controller
      * @param  \App\Models\ProductsRegion  $productsRegion
      * @return \Illuminate\Http\Response
      */
-    public function show(ProductsRegion $productsRegion)
+    public function detail($id, products $allproducts)
     {
-        //
+        $productsRegion = ProductsRegion::find($id);
+
+        $allproducts = products::all();
+        return view('backend.productsregion.productsregiondetail', ['productsRegion' => $productsRegion], ["allproducts"=>$allproducts] );
     }
 
     /**
@@ -84,17 +84,6 @@ class ProductsRegionController extends Controller
 
         $productsregion->name = $request->input('name');
         $productsregion->description = $request->input('description');
-
-        if($request->hasfile('img_url')) {
-            $img = $request->file('img_url');
-            $extension = $img->getClientOriginalExtension();
-            $img_name = time().'.'.$img->extension();
-            $img->move(public_path('images'),$img_name);
-            $productsregion->img_url = $img;
-            $productsregion_arr = $request->toArray();
-            $productsregion_arr['img_url'] = $img_name;
-            $productsregion->update($productsregion_arr);
-        }
         $productsregion->save();
 
         return redirect()->route('productsregion.index')->with('updated', 'Product updated successfully.');

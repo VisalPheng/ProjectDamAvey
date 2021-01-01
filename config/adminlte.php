@@ -246,6 +246,20 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
+            'text'    => 'Products by Region',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Products by region',
+                    'url'  => '/productsregion/index',
+                ],
+                [
+                    'text' => 'Create region',
+                    'url'  => '/productsregion/create',
+                ],
+            ],
+        ],
+        [
             'text'    => 'Products',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -259,34 +273,7 @@ return [
                 ],
             ],
         ],
-        [
-            'text'    => 'Products by Region',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'All Posts',
-                    'url'  => '/productsregion/index',
-                ],
-                [
-                    'text' => 'Create',
-                    'url'  => '/productsregion/create',
-                ],
-            ],
-        ],
-        [
-            'text'    => 'Products by region',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'Products by region',
-                    'url'  => '/productsbyregion/index',
-                ],
-                [
-                    'text' => 'Create',
-                    'url'  => '/productsbyregion/create',
-                ],
-            ],
-        ],
+
     ],
 
     /*

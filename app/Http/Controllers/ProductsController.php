@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\products;
 use Illuminate\Http\Request;
+use App\Models\ProductsRegion;
 use Auth;
 
 class ProductsController extends Controller
@@ -17,6 +19,7 @@ class ProductsController extends Controller
     {
         $allproducts = Products::all();
         return view('backend.products.productsindex')->with(["allproducts"=>$allproducts]);
+
     }
 
     /**
@@ -24,9 +27,10 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create( ProductsRegion $productsregion)
     {
-        return view('backend.products.productscreate');
+        $productsregion = ProductsRegion::all();
+        return view('backend.products.productscreate', ['productsregion' => $productsregion]);
     }
 
     /**

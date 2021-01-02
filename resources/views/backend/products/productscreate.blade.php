@@ -27,9 +27,13 @@
                     <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="Region">Region ID</label>
-                    <textarea type="text" class="form-control" id="productsbyregion_id" name="productsbyregion_id" ></textarea>
+                    <select class="form-control selectpicker" data-live-search="true" id="productsbyregion_id" name="productsbyregion_id" multiple>
+                        @foreach ($productsregion as $region)
+                        <option value="{{$region->id}}">{{$region->id}}</option>
+                        @endforeach
+                      </select>
                 </div>
+
 
                 <div class="form-group">
                   <label for="pimg">Products Image</label>
@@ -58,4 +62,9 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
+    <script>
+    $(document).ready(function(){
+        $('.selectpicker').selectpicker();
+    });
+    </script>
 @stop

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\products;
 
 class HomeController extends Controller
 {
@@ -17,9 +18,10 @@ class HomeController extends Controller
         return view('frontend.homepage');
     }
 
-    public function products()
+    public function products(products $products)
     {
-        return view('frontend.productlist');
+        $allproducts = Products::all();
+        return view('frontend.productlist')->with(["allproducts"=>$allproducts]);
     }
 
     public function productsbyregion()

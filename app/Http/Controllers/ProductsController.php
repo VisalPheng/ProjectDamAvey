@@ -41,6 +41,12 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'productsbyregion_id' => 'required',
+        ]);
+
         $img = $request->file('img_url');
         $img_name = time().'.'.$img->extension();
         $request->file('img_url')->move(public_path('images'),$img_name);

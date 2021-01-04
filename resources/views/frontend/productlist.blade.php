@@ -31,9 +31,12 @@
               @forelse ($allproducts as $products)
               <div class="col mb-4">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="card">
                   <img  src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
 =======
+=======
+>>>>>>> 36355123bc70483b930af904a029e854edce873c
                 <div class="card mx-auto">
                   <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
 >>>>>>> 36355123bc70483b930af904a029e854edce873c

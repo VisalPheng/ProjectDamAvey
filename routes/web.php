@@ -56,6 +56,7 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
 
+<<<<<<< HEAD
 //Productstype
 Route::middleware('auth')->prefix('/productstype')->group(function(){
     Route::get('/index',[ProductstypeContorller::class,'index'])->name('productstype.index');
@@ -66,3 +67,6 @@ Route::middleware('auth')->prefix('/productstype')->group(function(){
     Route::put('/update/{id}',[ProductstypeContorller::class,'update'])->name('productstype.update');
     Route::get('/delete/{id}',[ProductstypeContorller::class,'delete'])->name('productstype.delete');
 });
+=======
+//
+>>>>>>> 36355123bc70483b930af904a029e854edce873c

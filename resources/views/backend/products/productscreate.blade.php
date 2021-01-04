@@ -42,6 +42,7 @@
                         @foreach ($productsregion as $region)
                         <option value="{{$region->id}}">{{$region->name}}</option>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         @endforeach
                       </select>
                 </div>
@@ -49,6 +50,8 @@
                     <select class="form-control selectpicker" data-live-search="true" id="productstype_id" name="productstype_id" multiple>
                         @foreach ($productstype as $protype)
                         <option value="{{$protype->id}}">{{$protype->name}}</option>
+=======
+>>>>>>> 36355123bc70483b930af904a029e854edce873c
 =======
 >>>>>>> 36355123bc70483b930af904a029e854edce873c
                         @endforeach

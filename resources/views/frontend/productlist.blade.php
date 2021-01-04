@@ -24,10 +24,11 @@
         </div>
 
         <div class="col-md-8">
-          <div class="row row-cols-1 row-cols-md-3">
+          <div class="container">
+            <div class="card-deck">
               @foreach ($allproducts as $products)
               <div class="col mb-4">
-                <div class="card">
+                <div class="card mx-auto">
                   <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a href="">{{$products->name}}</a></h5>
@@ -36,6 +37,7 @@
               </div>
               @endforeach
             </div>
+          </div>
         </div>
       </div>
     </div>

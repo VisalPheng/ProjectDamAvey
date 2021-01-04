@@ -67,7 +67,32 @@
         text-align: center;
       }
 }
+@media (max-width:991px){
+    .header-text {
+        top: 60%;
+        
+    }
 
+}
 @media (max-width:767px){
-    
+   .nav-item .nav-link {
+       margin: 0px;
+       height: 38px;
+   }
+   .header-text {
+       top: 47%;
+       
+   }
+
+}
+
+@media (max-width: 575px) {
+    .header-text h1{
+        font-size: 25px;
+        
+    }
+    .header-text {
+        top: 37%;
+        
+    }
 }

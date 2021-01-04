@@ -35,4 +35,8 @@ class HomeController extends Controller
         $products = Products::find($id);
         return view('frontend.productdetail', ['products' =>$products]);
     }
+    public function dashboard()
+    {
+        return view('backend.dashboard');
+    }
 }

@@ -27,6 +27,11 @@ Auth::routes();
 //
 
 //
+//Backend
+
+//Dashboard
+    Route::middleware('auth')->get('/dashboard',[HomeController::class, 'dashboard'])->name('dashboard');
+//
 
 //Products
 Route::middleware('auth')->prefix('/products')->group(function(){
@@ -51,13 +56,4 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
 
-
-// Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
-//     Route::get('/index',[ProductsByRegionController::class,'index'])->name('productsbyregion.index');
-//     Route::get('/create',[ProductsByRegionController::class,'create'])->name('productsbyregion.create');
-//     Route::post('/store',[ProductsByRegionController::class,'store'])->name('productsbyregion.store');
-//     Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
-//     Route::put('/update/{id}',[ProductsByRegionController::class,'update'])->name('productsbyregion.update');
-//     Route::get('/delete/{id}',[ProductsByRegionController::class,'delete'])->name('productsbyregion.delete');
-
-// });
+//

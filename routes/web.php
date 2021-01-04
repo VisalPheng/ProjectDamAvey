@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProductsRegionController;
-use App\Http\Controllers\ProductsByRegionController;
+use App\Http\Controllers\ProductstypeContorller;
 use App\Http\Controllers\HomeController;
 
 Auth::routes();
@@ -65,13 +65,13 @@ Route::middleware('auth')->prefix('/productsregion')->group(function(){
     Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
 });
 
-
-// Route::middleware('auth')->prefix('/productsbyregion')->group(function(){
-//     Route::get('/index',[ProductsByRegionController::class,'index'])->name('productsbyregion.index');
-//     Route::get('/create',[ProductsByRegionController::class,'create'])->name('productsbyregion.create');
-//     Route::post('/store',[ProductsByRegionController::class,'store'])->name('productsbyregion.store');
-//     Route::get('/detail/{id}',[ProductsByRegionController::class,'detail'])->name('productsbyregion.detail');
-//     Route::put('/update/{id}',[ProductsByRegionController::class,'update'])->name('productsbyregion.update');
-//     Route::get('/delete/{id}',[ProductsByRegionController::class,'delete'])->name('productsbyregion.delete');
-
-// });
+//Productstype
+Route::middleware('auth')->prefix('/productstype')->group(function(){
+    Route::get('/index',[ProductstypeContorller::class,'index'])->name('productstype.index');
+    Route::get('/create',[ProductstypeContorller::class,'create'])->name('productstype.create');
+    Route::post('/store',[ProductstypeContorller::class,'store'])->name('productstype.store');
+    Route::get('/detail/{id}',[ProductstypeContorller::class,'detail'])->name('productstype.detail');
+    Route::get('/edit/{id}',[ProductstypeContorller::class,'edit'])->name('productstype.edit');
+    Route::put('/update/{id}',[ProductstypeContorller::class,'update'])->name('productstype.update');
+    Route::get('/delete/{id}',[ProductstypeContorller::class,'delete'])->name('productstype.delete');
+});

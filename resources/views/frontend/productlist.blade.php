@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
     <img src="img/2.jpg" alt="">
-    <div class="text-center"> 
+    <div class="text-center">
         <p>ប្រភេទដំណាំ</p>
     </div>
 </div>
@@ -28,7 +28,7 @@
               @foreach ($allproducts as $products)
               <div class="col mb-4">
                 <div class="card">
-                  <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
+                  <img  src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a href="">{{$products->name}}</a></h5>
                   </div>

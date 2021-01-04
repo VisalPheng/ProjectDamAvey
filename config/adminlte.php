@@ -260,6 +260,20 @@ return [
             ],
         ],
         [
+            'text'    => 'Productstype',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Products by Type',
+                    'url'  => '/productstype/index',
+                ],
+                [
+                    'text' => 'Create Type',
+                    'url'  => '/productstype/create',
+                ],
+            ],
+        ],
+        [
             'text'    => 'Products',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [

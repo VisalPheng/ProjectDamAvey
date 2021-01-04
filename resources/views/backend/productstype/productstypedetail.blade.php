@@ -1,34 +1,28 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Create Products')
 
 @section('content_header')
 @stop
 
 @section('content')
-    <h1>Posts</h1>
-    @if(Session::has('updated'))
-            <div class="alert alert-info">
-              {{Session::get('updated')}}
-            </div>
-    @endif
 
-    @if(Session::has('deleted'))
-            <div class="alert alert-danger">
-              {{Session::get('deleted')}}
-            </div>
-            @endif
+<div class="card" style="width: 18rem;">
+      <h4>{{$productstype->name}}</h4>
+    </div>
+
     <table class="table table-bordered table-dark">
         <tr>
             <th>ID</th>
             <th>Image</th>
             <th>Title</th>
             <th>Description</th>
-            <th>Region ID</th>
-            <th>TYPE ID</th>
             <th>Action</th>
         </tr>
-        @foreach ($allproducts as $products)
+
+        @foreach ($allproducts as $products )
+
+        @if ($products->productstype_id == $productstype->id)
         <tr>
             <td>{{$products->id}}</td>
             <td width="300px">
@@ -36,16 +30,18 @@
             </td>
             <td>{{$products->name}}</td>
             <td>{{$products->description}}</td>
-            <td>{{$products->productsbyregion_id}}</td>
-            <td>{{$products->productstype_id}}</td>
             <td width="300px">
                 <a href="{{ route('products.detail',$products->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('products.edit',$products->id) }}" class="btn btn-primary ">Edit</a>
                 <a href="{{ route('products.delete',$products->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>
+        @endif
     @endforeach
     </table>
+  </div>
+
+
 
 @stop
 

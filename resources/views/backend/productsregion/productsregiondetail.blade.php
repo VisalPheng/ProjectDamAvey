@@ -6,10 +6,7 @@
 @stop
 
 @section('content')
-
-<div class="card" style="width: 18rem;">
-      <h4 class="card-title">{{$productsRegion->name}}</h4>
-    </div>
+    <h1>{{$productsRegion->name}}</h1>
 
     <table class="table table-bordered table-dark">
         <tr>

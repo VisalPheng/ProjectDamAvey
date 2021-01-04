@@ -61,12 +61,6 @@
     }
 }       
 /*  */
-
-/* Card */
-
-.card a{
-    color: black;
-}
 #monthlypopular{
     margin-top: 5rem;
 }
@@ -74,27 +68,11 @@
 #dailypopular{
     margin-top: 3rem;
 }
-
-.card-img-top {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-}
-.card-title{
-    text-align: center;
-}
-
-.card-slide{
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
 @media (max-width: 767px) {
     .hide-card {
         display: none;
     }
 }
-/*  */
 
 /* Selection */
 ::selection {

@@ -23,6 +23,7 @@ Auth::routes();
     Route::get('/',[HomeController::class, 'home'])->name('home');
     Route::get('/products',[HomeController::class, 'products'])->name('products');
     Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
+    Route::get('/productsdetail{id}',[HomeController::class, 'productdetail'])->name('productdetail');
 //
 
 //

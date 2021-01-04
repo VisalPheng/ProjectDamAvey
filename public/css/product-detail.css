@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Battambang', cursive;
+}
+
+.background img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    box-shadow: 0 0 5px 5px rgba(44, 44, 44, 0.3);
+
+}
+
+.text-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+  }
+
+.product-desc {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.product-side {
+    padding-top: 5rem;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.equipment{
+    padding-top: 2rem;
+}

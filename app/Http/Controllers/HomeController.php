@@ -30,4 +30,9 @@ class HomeController extends Controller
         $allproducts = Products::all();
         return view('frontend.productregion')->with(["allproducts"=>$allproducts]);
     }
+    public function productdetail($id, products $products)
+    {
+        $products = Products::find($id);
+        return view('frontend.productdetail', ['products' =>$products]);
+    }
 }

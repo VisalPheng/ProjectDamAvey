@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\products;
+use App\Models\ProductsRegion;
 
 class HomeController extends Controller
 {
@@ -24,8 +25,18 @@ class HomeController extends Controller
         return view('frontend.productlist')->with(["allproducts"=>$allproducts]);
     }
 
-    public function productsbyregion()
+    public function productsbyregion(ProductsRegion $productsRegion, products $products)
     {
-        return view('frontend.productregion');
+        $allproducts = Products::all();
+        return view('frontend.productregion')->with(["allproducts"=>$allproducts]);
+    }
+    public function productdetail($id, products $products)
+    {
+        $products = Products::find($id);
+        return view('frontend.productdetail', ['products' =>$products]);
+    }
+    public function dashboard()
+    {
+        return view('backend.dashboard');
     }
 }

@@ -12,8 +12,9 @@
 <section id="product">
   <div class="container-fluid product-body">
       <div class="row">
-        <div class="col-md-4">
-          <p style="font-size: 36px;">ដំណាំ</p>
+        <div class="col-md-2">
+          <div class="container">
+            <p style="font-size: 36px;">ដំណាំ</p>
           <ul>
               <li><a href="">ដំណាំស្រូវ</a></li>
               <li><a href="">ដំណាំបន្លែ</a></li>
@@ -21,21 +22,31 @@
               <li><a href="">ដំណាំកៅស៊ូ</a></li>
               <li><a href="">ដំណាំផ្សិត</a></li>
           </ul>
+          </div>
         </div>
 
-        <div class="col-md-8">
-          <div class="row row-cols-1 row-cols-md-3">
-              @foreach ($allproducts as $products)
+        <div class="col-md-10">
+          <div class="container">
+            <div class="card-deck">
+              @forelse ($allproducts as $products)
               <div class="col mb-4">
+<<<<<<< HEAD
                 <div class="card">
                   <img  src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
+=======
+                <div class="card mx-auto">
+                  <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
+>>>>>>> 36355123bc70483b930af904a029e854edce873c
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">{{$products->name}}</a></h5>
+                    <h5 class="card-title"><a href="{{ route('productdetail',$products->id) }}">{{$products->name}}</a></h5>
                   </div>
                 </div>
               </div>
-              @endforeach
+              @empty
+              <h1>No products yet</h1>
+              @endforelse
             </div>
+          </div>
         </div>
       </div>
     </div>

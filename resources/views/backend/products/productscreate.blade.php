@@ -37,9 +37,11 @@
                     <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
                 </div>
                 <div class="form-group">
+                    <label for="region">Region</label>
                     <select class="form-control selectpicker" data-live-search="true" id="productsbyregion_id" name="productsbyregion_id" multiple>
                         @foreach ($productsregion as $region)
                         <option value="{{$region->id}}">{{$region->name}}</option>
+<<<<<<< HEAD
                         @endforeach
                       </select>
                 </div>
@@ -47,6 +49,8 @@
                     <select class="form-control selectpicker" data-live-search="true" id="productstype_id" name="productstype_id" multiple>
                         @foreach ($productstype as $protype)
                         <option value="{{$protype->id}}">{{$protype->name}}</option>
+=======
+>>>>>>> 36355123bc70483b930af904a029e854edce873c
                         @endforeach
                       </select>
                 </div>

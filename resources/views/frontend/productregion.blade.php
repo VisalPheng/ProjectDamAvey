@@ -9,7 +9,7 @@
         <p>ដំណាំតាមតំបន់</p>
     </div>
 </div>
-{{-- <section id="product">
+<section id="product">
     <div class="container-fluid product-body">
         <div class="row">
           <div class="col-md-4">
@@ -24,82 +24,25 @@
             </div>
           </div>
 
-          <div class="col-md-8">
-            <div class="card-deck">
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/peas.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សណ្តែក</a></h5>
+            <div class="col-md-8">
+              <div class="container">
+                <div class="card-deck">
+                  @forelse ($allproducts as $products)
+                  <div class="col mb-4">
+                    <div class="card mx-auto">
+                      <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">{{$products->name}}</a></h5>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/carrot.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">ការ៉ុត</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/salad.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សាឡាដ</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/peas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សណ្តែក</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/carrot.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">ការ៉ុត</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/salad.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សាឡាដ</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/peas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សណ្តែក</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/carrot.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">ការ៉ុត</a></h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="img/salad.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="">សាឡាដ</a></h5>
-                    </div>
-                  </div>
+                  @empty
+                  <h1>No products yet</h1>
+                  @endforelse
                 </div>
               </div>
-          </div>
+            </div>
+
         </div>
       </div>
-</section> --}}
+</section>

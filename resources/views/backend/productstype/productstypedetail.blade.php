@@ -7,8 +7,8 @@
 
 @section('content')
 
-<div class="card" style="width: 18rem;">
-      <h4>{{$productstype->name}}</h4>
+<div>
+      <h1>{{$productstype->name}}</h1>
     </div>
 
     <table class="table table-bordered table-dark">

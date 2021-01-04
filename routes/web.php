@@ -30,7 +30,7 @@ Auth::routes();
 //Backend
 
 //Dashboard
-    Route::middleware('auth')->get('/dashboard',[HomeController::class, 'dashboard'])->name('dashboard');
+    Route::middleware('auth')->get('/home',[HomeController::class, 'dashboard'])->name('dashboard');
 //
 
 //Products

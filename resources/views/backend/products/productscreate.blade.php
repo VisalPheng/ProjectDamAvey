@@ -45,6 +45,7 @@
                       </select>
                 </div>
                 <div class="form-group">
+                    <label for="productstype">Products Type</label>
                     <select class="form-control selectpicker" data-live-search="true" id="productstype_id" name="productstype_id" multiple>
                         @foreach ($productstype as $protype)
                         <option value="{{$protype->id}}">{{$protype->name}}</option>

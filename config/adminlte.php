@@ -234,10 +234,10 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        ['header' => 'account_settings'],
+        ['header' => ''],
         [
-            'text' => 'Users',
-            'url'  => 'admin/settings',
+            'text' => 'Dashboard',
+            'url'  => '/home',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
@@ -250,17 +250,17 @@ return [
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'Products by region',
+                    'text' => 'Products by Region',
                     'url'  => '/productsregion/index',
                 ],
                 [
-                    'text' => 'Create region',
+                    'text' => 'Create Region',
                     'url'  => '/productsregion/create',
                 ],
             ],
         ],
         [
-            'text'    => 'Productstype',
+            'text'    => 'Products Type',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [

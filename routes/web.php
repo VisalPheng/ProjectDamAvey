@@ -17,28 +17,13 @@ Auth::routes();
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Frontend
 
 //Navbar
     Route::get('/',[HomeController::class, 'home'])->name('home');
     Route::get('/products',[HomeController::class, 'products'])->name('products');
     Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
 //
-
-// Route::get('/', function () {
-//     return view('frontend.homepage');
-// });
-
-// Route::get('/productlist', function () {
-//     return view('frontend.productlist');
-// });
-
-// Route::get('/productregion', function () {
-//     return view('frontend.productregion');
-// });
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-//Frontend
 
 //
 

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+body{
+    font-family: 'Battambang', cursive;
+}
 .background img{
     width: 100%;
     object-fit: cover;

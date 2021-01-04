@@ -12,8 +12,9 @@
 <section id="product">
   <div class="container-fluid product-body">
       <div class="row">
-        <div class="col-md-4">
-          <p style="font-size: 36px;">ដំណាំ</p>
+        <div class="col-md-2">
+          <div class="container">
+            <p style="font-size: 36px;">ដំណាំ</p>
           <ul>
               <li><a href="">ដំណាំស្រូវ</a></li>
               <li><a href="">ដំណាំបន្លែ</a></li>
@@ -21,9 +22,10 @@
               <li><a href="">ដំណាំកៅស៊ូ</a></li>
               <li><a href="">ដំណាំផ្សិត</a></li>
           </ul>
+          </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="container">
             <div class="card-deck">
               @forelse ($allproducts as $products)

@@ -27,7 +27,7 @@
             <div class="col-md-8">
               <div class="container">
                 <div class="card-deck">
-                  @foreach ($allproducts as $products)
+                  @forelse ($allproducts as $products)
                   <div class="col mb-4">
                     <div class="card mx-auto">
                       <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
@@ -36,7 +36,9 @@
                       </div>
                     </div>
                   </div>
-                  @endforeach
+                  @empty
+                  <h1>No products yet</h1>
+                  @endforelse
                 </div>
               </div>
             </div>

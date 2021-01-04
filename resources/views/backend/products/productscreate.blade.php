@@ -37,9 +37,10 @@
                     <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
                 </div>
                 <div class="form-group">
+                    <label for="region">Region</label>
                     <select class="form-control selectpicker" data-live-search="true" id="productsbyregion_id" name="productsbyregion_id" multiple>
                         @foreach ($productsregion as $region)
-                        <option value="{{$region->name}}">{{$region->name}}</option>
+                        <option value="{{$region->id}}">{{$region->name}}</option>
                         @endforeach
                       </select>
                 </div>

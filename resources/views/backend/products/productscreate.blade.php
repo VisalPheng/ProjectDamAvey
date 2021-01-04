@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <select class="form-control selectpicker" data-live-search="true" id="productsbyregion_id" name="productsbyregion_id" multiple>
                         @foreach ($productsregion as $region)
-                        <option value="{{$region->id}}">{{$region->id}}</option>
+                        <option value="{{$region->name}}">{{$region->name}}</option>
                         @endforeach
                       </select>
                 </div>

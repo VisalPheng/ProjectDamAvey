@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Edit Products')
+@section('title', 'Edit Products Type')
 
 @section('content_header')
 @stop

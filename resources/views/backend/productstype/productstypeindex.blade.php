@@ -1,12 +1,12 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'List all Products Type')
 
 @section('content_header')
 @stop
 
 @section('content')
-    <h1>Products by type posts</h1>
+    <h1>Products By Type Posts</h1>
     @if(Session::has('updated'))
             <div class="alert alert-info">
               {{Session::get('updated')}}

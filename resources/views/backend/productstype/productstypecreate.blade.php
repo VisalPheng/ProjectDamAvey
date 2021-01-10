@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Create Products')
+@section('title', 'Create Products Type')
 
 @section('content_header')
 @stop
@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1>Create Products type</h1>
+            <h1>Create Products Type</h1>
             @if(Session::has('success'))
             <div class="alert alert-success">
               {{Session::get('success')}}

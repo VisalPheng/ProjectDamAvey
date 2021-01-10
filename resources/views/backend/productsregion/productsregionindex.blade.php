@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'List All Products')
+@section('title', 'List All Regions')
 
 @section('content_header')
 @stop

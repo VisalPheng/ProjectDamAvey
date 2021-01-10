@@ -35,7 +35,8 @@
                 <img src="{{asset("images/".$products->img_url)}}" alt="Image" class="img-responsive" width="100px">
             </td>
             <td>{{$products->name}}</td>
-            <td>{{$products->description}}</td>
+            {{-- <td>{{$products->description}}</td> --}}
+            <td>{!!Str::limit($products->description, 300, ' (...)')!!}</td>
             <td>{{$products->productsbyregion_id}}</td>
             <td>{{$products->productstype_id}}</td>
             <td width="300px">

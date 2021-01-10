@@ -34,7 +34,8 @@
 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea>
+                    {{-- <textarea rows="5" class="form-control" id="pdesc" name="description" ></textarea> --}}
+                    <textarea id="my-editor" name="description" class="form-control" id="pdesc"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="region">Region</label>
@@ -84,4 +85,16 @@
         $('.selectpicker').selectpicker();
     });
     </script>
+    <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+    <script>
+      var options = {
+        filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+        filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
+        filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+        filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+      };
+    </script>
+    <script>
+        CKEDITOR.replace('my-editor', options);
+        </script>
 @stop

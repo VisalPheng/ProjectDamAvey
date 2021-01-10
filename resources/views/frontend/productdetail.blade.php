@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-md-8">
             <div class="product-desc">
-                <p>{{$products->description}}</p>
+                <p>{!!$products->description!!}</p>
             </div>
         </div>
         <div class="col-md-4">

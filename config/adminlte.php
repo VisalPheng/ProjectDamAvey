@@ -287,6 +287,20 @@ return [
                 ],
             ],
         ],
+        [
+            'text'    => 'Equipment',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'All Posts',
+                    'url'  => '/equipment/index',
+                ],
+                [
+                    'text' => 'Create',
+                    'url'  => '/equipment/create',
+                ],
+            ],
+        ],
 
     ],
 

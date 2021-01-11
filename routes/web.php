@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProductsRegionController;
 use App\Http\Controllers\ProductstypeContorller;
+use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\HomeController;
 
 Auth::routes();
@@ -65,6 +66,15 @@ Route::middleware('auth')->prefix('/productstype')->group(function(){
     Route::get('/edit/{id}',[ProductstypeContorller::class,'edit'])->name('productstype.edit');
     Route::put('/update/{id}',[ProductstypeContorller::class,'update'])->name('productstype.update');
     Route::get('/delete/{id}',[ProductstypeContorller::class,'delete'])->name('productstype.delete');
+});
+Route::middleware('auth')->prefix('/equipment')->group(function(){
+    Route::get('/index',[EquipmentController::class,'index'])->name('equipment.index');
+    Route::get('/create',[EquipmentController::class,'create'])->name('equipment.create');
+    Route::post('/store',[EquipmentController::class,'store'])->name('equipment.store');
+    Route::get('/detail/{id}',[EquipmentController::class,'detail'])->name('equipment.detail');
+    Route::get('/edit/{id}',[EquipmentController::class,'edit'])->name('equipment.edit');
+    Route::put('/update/{id}',[EquipmentController::class,'update'])->name('equipment.update');
+    Route::get('/delete/{id}',[EquipmentController::class,'delete'])->name('equipment.delete');
 });
 
 //Laravel File Manager & CKEditor

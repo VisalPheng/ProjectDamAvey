@@ -12,21 +12,12 @@
 <section id="product">
     <div class="container-fluid product-body">
         <div class="row">
-          <div class="col-md-4">
-            <div class="container catergory">
-                <p style="font-size: 36px;">តំបន់</p>
-            <ul>
-              @foreach ($allproductsRegion as $productsRegion)
-              <li><a href="{{ route('regionscategory',$productsRegion->id) }}">{{$productsRegion->name}}</a></li>
-          @endforeach
-            </ul>
-            </div>
-          </div>
-
-            <div class="col-md-8">
               <div class="container">
+                <h1 style="text-align: center">{{$productsRegion->name}}</h1>
+                <br>
                 <div class="card-deck">
-                  @forelse ($allproducts as $products)
+                  @foreach ($allproducts as $products)
+                  @if ($products->productsbyregion_id == $productsRegion->id)
                   <div class="col mb-4">
                     <div class="card mx-auto">
                       <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
@@ -35,12 +26,13 @@
                       </div>
                     </div>
                   </div>
-                  @empty
-                  <h1>No products yet</h1>
-                  @endforelse
+                  @endif
+                  @endforeach
+                </div>
+                <div class="back">
+                  <a href="{{ route('productsbyregion') }}">◀ ត្រឡប់ទៅកាន់ដំណាំតាមតំបន់</a>
                 </div>
               </div>
-            </div>
 
         </div>
       </div>

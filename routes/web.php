@@ -23,11 +23,14 @@ Auth::routes();
 //Navbar
     Route::get('/',[HomeController::class, 'home'])->name('home');
     Route::get('/products',[HomeController::class, 'products'])->name('products');
+    Route::get('/productscategory{id}',[HomeController::class, 'productscategory'])->name('productscategory');
+    Route::get('/regionscategory{id}',[HomeController::class, 'regionscategory'])->name('regionscategory');
     Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
     Route::get('/productsdetail-{id}',[HomeController::class, 'productdetail'])->name('productdetail');
 //
-
+    
 //
+
 //Backend
 
 //Dashboard

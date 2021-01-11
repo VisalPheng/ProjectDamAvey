@@ -48,6 +48,7 @@ class ProductsController extends Controller
             'description' => 'required',
             'productsbyregion_id' => 'required',
             'productstype_id' => 'required',
+            'img_url' => 'required',
         ]);
 
         $img = $request->file('img_url');

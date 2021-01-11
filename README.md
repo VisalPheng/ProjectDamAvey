@@ -1,5 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="public\img\damaveyblack.png" width="400"></a></p>
 
-## About Laravel
+## About DamAvey
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+DamAvey is a website that provided all the peoples that are interested in farming about the benefits of agricultural products and also providing detail of what equipment that we use to plant those agricultural products and also telling the way to plant and maintain those plants too.

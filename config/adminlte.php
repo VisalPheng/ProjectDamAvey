@@ -126,9 +126,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-teal elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-dark navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -225,11 +225,6 @@ return [
 
     'menu' => [
         [
-            'text' => 'Search',
-            'search' => true,
-            'topnav' => true,
-        ],
-        [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
@@ -247,14 +242,16 @@ return [
         ],
         [
             'text'    => 'Products by Region',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fas fa-globe-asia',
             'submenu' => [
                 [
                     'text' => 'Products by Region',
+                    'icon' => 'fas fa-th-list',
                     'url'  => '/productsregion/index',
                 ],
                 [
                     'text' => 'Create Region',
+                    'icon' => 'fas fa-plus-square',
                     'url'  => '/productsregion/create',
                 ],
             ],
@@ -265,38 +262,44 @@ return [
             'submenu' => [
                 [
                     'text' => 'Products by Type',
+                    'icon' => 'fas fa-th-list',
                     'url'  => '/productstype/index',
                 ],
                 [
                     'text' => 'Create Type',
+                    'icon' => 'fas fa-plus-square',
                     'url'  => '/productstype/create',
                 ],
             ],
         ],
         [
             'text'    => 'Products',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fas fa-seedling',
             'submenu' => [
                 [
                     'text' => 'All Posts',
+                    'icon' => 'fas fa-th-list',
                     'url'  => '/products/index',
                 ],
                 [
                     'text' => 'Create',
+                    'icon' => 'fas fa-plus-square',
                     'url'  => '/products/create',
                 ],
             ],
         ],
         [
             'text'    => 'Equipment',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fas fa-boxes',
             'submenu' => [
                 [
                     'text' => 'All Posts',
+                    'icon' => 'fas fa-th-list',
                     'url'  => '/equipment/index',
                 ],
                 [
                     'text' => 'Create',
+                    'icon' => 'fas fa-plus-square',
                     'url'  => '/equipment/create',
                 ],
             ],

@@ -23,6 +23,7 @@
             <th>ID</th>
             <th>Type</th>
             <th>Description</th>
+            <th>Created at</th>
             <th>Action</th>
         </tr>
         @foreach ($productstype as $protype)
@@ -30,6 +31,7 @@
             <td>{{$protype->id}}</td>
             <td>{{$protype->name}}</td>
             <td>{{$protype->description}}</td>
+            <td>{{$protype->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productstype.detail',$protype->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('productstype.edit',$protype->id) }}" class="btn btn-primary ">Edit</a>

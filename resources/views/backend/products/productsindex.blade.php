@@ -26,6 +26,7 @@
             <th>Description</th>
             <th>Region ID</th>
             <th>TYPE ID</th>
+            <th>Created at</th>
             <th>Action</th>
         </tr>
         @foreach ($allproducts as $products)
@@ -39,6 +40,7 @@
             <td>{!!Str::limit($products->description, 300, ' (...)')!!}</td>
             <td>{{$products->productsbyregion_id}}</td>
             <td>{{$products->productstype_id}}</td>
+            <td>{{$products->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('products.detail',$products->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('products.edit',$products->id) }}" class="btn btn-primary ">Edit</a>

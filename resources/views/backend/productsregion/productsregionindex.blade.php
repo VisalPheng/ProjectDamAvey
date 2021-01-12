@@ -23,6 +23,7 @@
             <th>ID</th>
             <th>Region</th>
             <th>Description</th>
+            <th>Created at</th>
             <th>Action</th>
         </tr>
         @foreach ($allproductsregion as $productsregion)
@@ -30,6 +31,7 @@
             <td>{{$productsregion->id}}</td>
             <td>{{$productsregion->name}}</td>
             <td>{{$productsregion->description}}</td>
+            <td>{{$productsregion->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-primary ">Detail</a>
                 <a href="{{ route('productsregion.edit',$productsregion->id) }}" class="btn btn-primary ">Edit</a>

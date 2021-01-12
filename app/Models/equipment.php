@@ -13,3 +13,4 @@ class equipment extends Model
 
     protected $fillable = ['user_id', 'name', 'description', 'img_url', 'created_at'];
 }
+

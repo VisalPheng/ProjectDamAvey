@@ -301,6 +301,20 @@ return [
                 ],
             ],
         ],
+        [
+            'text'    => 'Equipment Product',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'All Posts',
+                    'url'  => '/equipmentproduct/index',
+                ],
+                [
+                    'text' => 'Create',
+                    'url'  => '/equipmentproduct/create',
+                ],
+            ],
+        ],
 
     ],
 

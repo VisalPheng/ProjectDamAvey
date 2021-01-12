@@ -16,15 +16,12 @@
           <div class="container">
             <p style="font-size: 36px;">ដំណាំ</p>
           <ul>
-              <li><a href="">ដំណាំស្រូវ</a></li>
-              <li><a href="">ដំណាំបន្លែ</a></li>
-              <li><a href="">ដំណាំហូបផ្លែ</a></li>
-              <li><a href="">ដំណាំកៅស៊ូ</a></li>
-              <li><a href="">ដំណាំផ្សិត</a></li>
+              @foreach ($allproductstype as $productstype)
+                  <li><a href="{{ route('productscategory',$productstype->id) }}">{{$productstype->name}}</a></li>
+              @endforeach
           </ul>
           </div>
         </div>
-
         <div class="col-md-10">
           <div class="container">
             <div class="card-deck">
@@ -38,9 +35,9 @@
                 </div>
               </div>
               @empty
-              <h1>No products yet</h1>
+               <h1>No products yet</h1>
               @endforelse
-            </div>
+           </div>
           </div>
         </div>
       </div>

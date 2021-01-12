@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\products;
 use App\Models\ProductsRegion;
+use App\Models\Productstype;
 
 class HomeController extends Controller
 {
@@ -19,16 +20,18 @@ class HomeController extends Controller
         return view('frontend.homepage');
     }
 
-    public function products(products $products)
+    public function products(products $products, Productstype $productstype)
     {
+        $allproductstype = Productstype::all();
         $allproducts = Products::all();
-        return view('frontend.productlist')->with(["allproducts"=>$allproducts]);
+        return view('frontend.productlist',["allproducts"=>$allproducts],["allproductstype"=>$allproductstype]);
     }
 
     public function productsbyregion(ProductsRegion $productsRegion, products $products)
     {
         $allproducts = Products::all();
-        return view('frontend.productregion')->with(["allproducts"=>$allproducts]);
+        $allproductsRegion = ProductsRegion::all();
+        return view('frontend.productregion',["allproducts"=>$allproducts],["allproductsRegion"=>$allproductsRegion]);
     }
     public function productdetail($id, products $products)
     {
@@ -38,5 +41,19 @@ class HomeController extends Controller
     public function dashboard()
     {
         return view('backend.dashboard');
+    }
+    public function productscategory($id, products $products, Productstype $productstype)
+    {
+        $productstype = Productstype::find($id);
+        $allproductstype = Productstype::all();
+        $allproducts = products::all();
+        return view('frontend.productcategory', ['productstype' => $productstype], ["allproducts"=>$allproducts],["allproductstype"=>$allproductstype] );
+    }
+    public function regionscategory($id, products $products, ProductsRegion $productsRegion)
+    {
+        $productsRegion = ProductsRegion::find($id);
+        $allproductsRegion = ProductsRegion::all();
+        $allproducts = products::all();
+        return view('frontend.regioncategory', ['productsRegion' => $productsRegion], ["allproducts"=>$allproducts],["allproductsRegion"=>$allproductsRegion] );
     }
 }

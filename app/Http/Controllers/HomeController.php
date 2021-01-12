@@ -15,9 +15,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function home()
+    public function home(products $products)
     {
-        return view('frontend.homepage');
+        $allproducts = Products::paginate(3);
+        return view('frontend.homepage',["allproducts"=>$allproducts]);
     }
 
     public function products(products $products, Productstype $productstype)

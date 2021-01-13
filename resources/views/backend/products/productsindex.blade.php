@@ -42,8 +42,8 @@
             <td>{{$products->productstype_id}}</td>
             <td>{{$products->created_at}}</td>
             <td width="300px">
-                <a href="{{ route('products.detail',$products->id) }}" class="btn btn-primary ">Detail</a>
-                <a href="{{ route('products.edit',$products->id) }}" class="btn btn-primary ">Edit</a>
+                <a href="{{ route('products.detail',$products->id) }}" class="btn btn-info">Detail</a>
+                <a href="{{ route('products.edit',$products->id) }}" class="btn btn-warning ">Edit</a>
                 <a href="{{ route('products.delete',$products->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>

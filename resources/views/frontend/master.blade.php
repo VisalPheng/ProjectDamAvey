@@ -41,7 +41,7 @@
                             <a class="nav-link" href="{{ route('productsbyregion') }}">ដំណាំតាមតំបន់</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="about-us.html">អំពីពួកយើង</a>
+                            <a class="nav-link" href="{{ route('aboutus') }}">អំពីពួកយើង</a>
                         </li>
                     </ul>
                 </div>

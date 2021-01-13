@@ -33,8 +33,8 @@
             <td>{{$productsregion->description}}</td>
             <td>{{$productsregion->created_at}}</td>
             <td width="300px">
-                <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-primary ">Detail</a>
-                <a href="{{ route('productsregion.edit',$productsregion->id) }}" class="btn btn-primary ">Edit</a>
+                <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-info ">Detail</a>
+                <a href="{{ route('productsregion.edit',$productsregion->id) }}" class="btn btn-warning">Edit</a>
                 <a href="{{ route('productsregion.delete',$productsregion->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>

@@ -33,8 +33,8 @@
             <td>{{$protype->description}}</td>
             <td>{{$protype->created_at}}</td>
             <td width="300px">
-                <a href="{{ route('productstype.detail',$protype->id) }}" class="btn btn-primary ">Detail</a>
-                <a href="{{ route('productstype.edit',$protype->id) }}" class="btn btn-primary ">Edit</a>
+                <a href="{{ route('productstype.detail',$protype->id) }}" class="btn btn-info">Detail</a>
+                <a href="{{ route('productstype.edit',$protype->id) }}" class="btn btn-warning">Edit</a>
                 <a href="{{ route('productstype.delete',$protype->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>

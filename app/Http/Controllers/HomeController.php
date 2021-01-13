@@ -57,4 +57,8 @@ class HomeController extends Controller
         $allproducts = products::all();
         return view('frontend.regioncategory', ['productsRegion' => $productsRegion], ["allproducts"=>$allproducts],["allproductsRegion"=>$allproductsRegion] );
     }
+    public function aboutus()
+    {
+        return view('frontend.aboutus');
+    }
 }

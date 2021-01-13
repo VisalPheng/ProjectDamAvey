@@ -28,6 +28,7 @@ Auth::routes();
     Route::get('/regionscategory{id}',[HomeController::class, 'regionscategory'])->name('regionscategory');
     Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
     Route::get('/productsdetail-{id}',[HomeController::class, 'productdetail'])->name('productdetail');
+    Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
 //
     
 //
@@ -70,28 +71,6 @@ Route::middleware('auth')->prefix('/productstype')->group(function(){
     Route::get('/edit/{id}',[ProductstypeContorller::class,'edit'])->name('productstype.edit');
     Route::put('/update/{id}',[ProductstypeContorller::class,'update'])->name('productstype.update');
     Route::get('/delete/{id}',[ProductstypeContorller::class,'delete'])->name('productstype.delete');
-});
-
-//Equipment
-Route::middleware('auth')->prefix('/equipment')->group(function(){
-    Route::get('/index',[EquipmentController::class,'index'])->name('equipment.index');
-    Route::get('/create',[EquipmentController::class,'create'])->name('equipment.create');
-    Route::post('/store',[EquipmentController::class,'store'])->name('equipment.store');
-    Route::get('/detail/{id}',[EquipmentController::class,'detail'])->name('equipment.detail');
-    Route::get('/edit/{id}',[EquipmentController::class,'edit'])->name('equipment.edit');
-    Route::put('/update/{id}',[EquipmentController::class,'update'])->name('equipment.update');
-    Route::get('/delete/{id}',[EquipmentController::class,'delete'])->name('equipment.delete');
-});
-
-//Equipmentproduct
-Route::middleware('auth')->prefix('/equipmentproduct')->group(function(){
-    Route::get('/index',[EquipmentProductController::class,'index'])->name('equipmentproduct.index');
-    Route::get('/create',[EquipmentProductController::class,'create'])->name('equipmentproduct.create');
-    Route::post('/store',[EquipmentProductController::class,'store'])->name('equipmentproduct.store');
-    Route::get('/detail/{id}',[EquipmentProductController::class,'detail'])->name('equipmentproduct.detail');
-    Route::get('/edit/{id}',[EquipmentProductController::class,'edit'])->name('equipmentproduct.edit');
-    Route::put('/update/{id}',[EquipmentProductController::class,'update'])->name('equipmentproduct.update');
-    Route::get('/delete/{id}',[EquipmentProductController::class,'delete'])->name('equipmentproduct.delete');
 });
 
 //Laravel File Manager & CKEditor

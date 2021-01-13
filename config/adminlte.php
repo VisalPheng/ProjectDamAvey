@@ -126,9 +126,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-teal elevation-4',
+    'classes_sidebar' => 'sidebar-dark-lightblue elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-dark navbar-light',
+    'classes_topnav' => 'navbar-lightblue navbar-dark',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -236,11 +236,6 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
             'text'    => 'Products by Region',
             'icon'    => 'fas fa-globe-asia',
             'submenu' => [
@@ -285,36 +280,6 @@ return [
                     'text' => 'Create',
                     'icon' => 'fas fa-plus-square',
                     'url'  => '/products/create',
-                ],
-            ],
-        ],
-        [
-            'text'    => 'Equipment',
-            'icon'    => 'fas fa-boxes',
-            'submenu' => [
-                [
-                    'text' => 'All Posts',
-                    'icon' => 'fas fa-th-list',
-                    'url'  => '/equipment/index',
-                ],
-                [
-                    'text' => 'Create',
-                    'icon' => 'fas fa-plus-square',
-                    'url'  => '/equipment/create',
-                ],
-            ],
-        ],
-        [
-            'text'    => 'Equipment Product',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'All Posts',
-                    'url'  => '/equipmentproduct/index',
-                ],
-                [
-                    'text' => 'Create',
-                    'url'  => '/equipmentproduct/create',
                 ],
             ],
         ],

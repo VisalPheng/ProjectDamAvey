@@ -17,7 +17,7 @@ class HomeController extends Controller
      */
     public function home(products $products)
     {
-        $allproducts = Products::paginate(5);
+        $allproducts = Products::paginate(3);
         return view('frontend.homepage',["allproducts"=>$allproducts]);
     }
 

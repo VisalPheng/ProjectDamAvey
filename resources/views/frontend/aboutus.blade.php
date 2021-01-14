@@ -68,7 +68,7 @@
                 <div class="col-lg-6 below-text">
                     <h3>ចក្ខុវិស័យរបស់យើង និង ក្តីស្រមៃរបស់ ដាំអ្វី</h3>
                     <br>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>ដាំអ្វីគឺជាកន្លែងមួយដែលប្រមូលផ្តុំទៅដោយឯកសារប្រភេទដំណាំនានានិងជាកន្លែងមួយដែលបង្ហាញពីការដាំដំណាំទាំងនោះដោយច្បាស់លាស់។ ដាំអ្វីបង្កើតឡើងក្នុងគោលបំណងចង់ចែករំលែកចំណេះដឹងដាំដុះកសិផលទៅកាន់ប្រជាជនកម្ពុជាទាំងអស់អោយយល់ដឹងពីប្រភេទដំណាំនានារបស់កម្ពុជាយើង</p>
                 </div>
                
             </div>

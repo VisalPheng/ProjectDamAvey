@@ -8,8 +8,9 @@
     top: 50%;
     right: 50%;
 }
-.carousel-caption p{
-    font-size: 20px;
+.carousel-caption a{
+    font-size: 24px;
+    color: white;
 }
 .carousel-caption h1 {
     font-weight: bold;

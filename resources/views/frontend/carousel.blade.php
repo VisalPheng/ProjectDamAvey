@@ -11,21 +11,22 @@
         <img src="img/bg-home.jpg" class="w-100" alt="...">
         <div class="carousel-caption">
           <h1>ដាំដំណាំគ្រប់មុខ គ្រប់គ្នា គ្រប់ទីកន្លែង</h1>
-          <p>ស្វែងរកប្រភេទដំណាំ</p>
+          <br>
+          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ស្វែងរកប្រភេទដំណាំ</a>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/2.jpg" class="w-100" alt="...">
         <div class="carousel-caption">
-          <h1>Second slide label</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>ប្រភេទដំណាំទាំងអស់នៅក្នុងដៃអ្នក</h1>
+          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ទៅកាន់ដំណាំតាមប្រភេទ</a>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/3.jpg" class="w-100" alt="...">
         <div class="carousel-caption">
-          <h1>Third slide label</h1>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h1>ស្វែងរកដំណាំតាមតំបន់ដែលអ្នកត្រូវការ</h1>
+          <a href="{{ route('productsbyregion') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ស្វែងរកដំណាំតាមតំបន់</a>
         </div>
       </div>
     </div>

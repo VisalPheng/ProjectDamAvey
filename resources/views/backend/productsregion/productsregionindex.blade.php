@@ -31,7 +31,7 @@
             <td>{{$productsregion->id}}</td>
             <td>{{$productsregion->name}}</td>
             <td>{{$productsregion->description}}</td>
-            <td>{{$productsregion->created_at}}</td>
+            <td width="100px">{{$productsregion->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-info ">Detail</a>
                 <a href="{{ route('productsregion.edit',$productsregion->id) }}" class="btn btn-warning">Edit</a>
@@ -40,7 +40,9 @@
         </tr>
     @endforeach
     </table>
-
+    <div class="d-flex justify-content-center">
+        {!! $allproductsregion->links() !!}
+    </div>
 @stop
 
 @section('css')

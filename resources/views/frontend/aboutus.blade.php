@@ -13,7 +13,7 @@
 
     <script src="js/navbar.js"></script>
     <title>
-        @yield('titlepage')
+        <title>អំពីពួកយើង | ដាំអ្វី</title>
     </title>
 </head>
 

@@ -17,7 +17,7 @@ class HomeController extends Controller
      */
     public function home(products $products)
     {
-        $allproducts = Products::paginate(3);
+        $allproducts = Products::paginate(5);
         return view('frontend.homepage',["allproducts"=>$allproducts]);
     }
 
@@ -41,7 +41,8 @@ class HomeController extends Controller
     }
     public function dashboard()
     {
-        return view('backend.dashboard');
+        $allproducts = Products::paginate(5);
+        return view('backend.dashboard', ["allproducts"=>$allproducts]);
     }
     public function productscategory($id, products $products, Productstype $productstype)
     {

@@ -31,7 +31,7 @@
             <td>{{$protype->id}}</td>
             <td>{{$protype->name}}</td>
             <td>{{$protype->description}}</td>
-            <td>{{$protype->created_at}}</td>
+            <td width="100px">{{$protype->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productstype.detail',$protype->id) }}" class="btn btn-info">Detail</a>
                 <a href="{{ route('productstype.edit',$protype->id) }}" class="btn btn-warning">Edit</a>
@@ -40,7 +40,9 @@
         </tr>
     @endforeach
     </table>
-
+    <div class="d-flex justify-content-center">
+        {!! $productstype->links() !!}
+    </div>
 @stop
 
 @section('css')

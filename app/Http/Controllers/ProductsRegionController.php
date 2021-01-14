@@ -16,7 +16,7 @@ class ProductsRegionController extends Controller
      */
     public function index()
     {
-        $allproductsregion = ProductsRegion::all();
+        $allproductsregion = ProductsRegion::paginate(5);
         return view('backend.productsregion.productsregionindex')->with(["allproductsregion"=>$allproductsregion]);
     }
 

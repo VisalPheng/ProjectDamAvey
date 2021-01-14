@@ -15,7 +15,7 @@ class ProductstypeContorller extends Controller
      */
     public function index()
     {
-        $productstype = Productstype::all();
+        $productstype = Productstype::paginate(5);
         return view('backend.productstype.productstypeindex')->with(["productstype"=>$productstype]);
     }
 

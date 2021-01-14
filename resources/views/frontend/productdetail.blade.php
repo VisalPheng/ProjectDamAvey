@@ -29,19 +29,35 @@
                 <div class="row equipment">
                     <div class="col">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="img/dirt.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <a href="#" class="btn btn-primary">ទិញឥឡូវនេះ</a>
+                              <h5 class="card-title">ដីមានជីជាតិ</h5>
+                              <a href="#" class="btn btn-info">ទិញឥឡូវនេះ</a>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="card">
+                            <img src="img/fertilizer.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">ជីសរីរាង្គ</h5>
+                              <a href="#" class="btn btn-info">ទិញឥឡូវនេះ</a>
                             </div>
                           </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="img/pot.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <a href="#" class="btn btn-primary">ទិញឥឡូវនេះ</a>
+                              <h5 class="card-title">ផើង</h5>
+                              <a href="#" class="btn btn-info">ទិញឥឡូវនេះ</a>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="card">
+                            <img src="img/bamboostand.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">ឈើទប់ដំណាំ</h5>
+                              <a href="#" class="btn btn-info">ទិញឥឡូវនេះ</a>
                             </div>
                           </div>
                     </div>

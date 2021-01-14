@@ -13,7 +13,7 @@
 
     <script src="js/navbar.js"></script>
     <title>
-        <title>អំពីពួកយើង | ដាំអ្វី</title>
+        អំពីពួកយើង | ដាំអ្វី
     </title>
 </head>
 
@@ -82,17 +82,17 @@
                        <div class="col-lg-4 mx-auto" style="width: 18rem;">
                             <img class="card-img-top" src="{{asset('img/sal.jpg')}}" alt="Pheng Visal">
                             <p></p>
-                            <h4 class="card-text text-center">Pheng Visal</h4>
+                            <h4 class="card-text text-center">ផេង វិសាល</h4>
                       </div>
                       <div class="col-lg-4 mx-auto" style="width: 18rem;">
                         <img class="card-img-top" src="{{asset('img/heng.jpg')}}" alt="Ny Sokheng">
                         <p></p>
-                        <h4 class="card-text text-center">Ny Sokheng</h4>
+                        <h4 class="card-text text-center">នី សុខហេង</h4>
                   </div>
                   <div class="col-lg-4 mx-auto" style="width: 18rem;">
                     <img class="card-img-top" src="{{asset('img/samnang.jpg')}}" alt="Pov Samnang">
                         <p></p>
-                        <h4 class="card-text text-center">Pov Samnang</h4>
+                        <h4 class="card-text text-center">ពៅ សំណាង</h4>
               </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                       </div>
                       <div class="col-md-6 item text">
                           <h3>ដាំអ្វី | DamAvey</h3>
-                          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                          <p>ដាំអ្វីគឺជាកន្លែងមួយដែលប្រមូលផ្តុំទៅដោយឯកសារប្រភេទដំណាំនានានិងជាកន្លែងមួយដែលបង្ហាញពីការដាំដំណាំទាំងនោះដោយច្បាស់លាស់។ ដាំអ្វីបង្កើតឡើងក្នុងគោលបំណងចង់ចែករំលែកចំណេះដឹងដាំដុះកសិផលទៅកាន់ប្រជាជនកម្ពុជាទាំងអស់អោយយល់ដឹងពីប្រភេទដំណាំនានារបស់កម្ពុជាយើង</p>
                       </div>
                       <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                   </div>

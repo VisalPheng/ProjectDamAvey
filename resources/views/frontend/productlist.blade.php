@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
     <img src="img/2.jpg" alt="">
-    <div class="text-center">
+    <div class="text-center header-text">
         <p>ប្រភេទដំណាំ</p>
     </div>
 </div>

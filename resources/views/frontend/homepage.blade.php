@@ -15,7 +15,7 @@
           <div class="row row-cols-1 row-cols-md-3">
             @forelse ($allproducts as $products)
             <div class="col mb-4">
-              <div class="card" style="width: 22em;margin:0 auto;">
+              <div class="card mx-auto">
                 <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><a href="{{ route('productdetail',$products->id) }}">{{$products->name}}</a></h5>
@@ -40,7 +40,7 @@
             <div class="row row-cols-1 row-cols-md-3">
               @forelse ($allproducts as $products)
               <div class="col mb-4">
-                <div class="card" style="width: 18em;margin:0 auto;">
+                <div class="card mx-auto">
                   <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a href="{{ route('productdetail',$products->id) }}">{{$products->name}}</a></h5>

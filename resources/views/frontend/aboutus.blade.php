@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <link rel="stylesheet" href="{{asset('css/aboutus.css')}}">
 
-    <script src="js/navbar.js"></script>
     <title>
         អំពីពួកយើង | ដាំអ្វី
     </title>
@@ -21,10 +20,9 @@
     <section id="header">
         <header>
             <!-- Navbar -->
-            <div class="container">
-              <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+              <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="{{ route('home') }}"><img src="img/damaveyblack.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +43,6 @@
                     </ul>
                 </div>
             </nav>
-            </div>
             <!--  -->
 
         </header>
@@ -83,16 +80,19 @@
                             <img class="card-img-top" src="{{asset('img/sal.jpg')}}" alt="Pheng Visal">
                             <p></p>
                             <h4 class="card-text text-center">ផេង វិសាល</h4>
+                            <br>
                       </div>
                       <div class="col-lg-4 mx-auto" style="width: 18rem;">
                         <img class="card-img-top" src="{{asset('img/heng.jpg')}}" alt="Ny Sokheng">
                         <p></p>
                         <h4 class="card-text text-center">នី សុខហេង</h4>
+                        <br>
                   </div>
                   <div class="col-lg-4 mx-auto" style="width: 18rem;">
                     <img class="card-img-top" src="{{asset('img/samnang.jpg')}}" alt="Pov Samnang">
                         <p></p>
                         <h4 class="card-text text-center">ពៅ សំណាង</h4>
+                        <br>
               </div>
                     </div>
                 </div>

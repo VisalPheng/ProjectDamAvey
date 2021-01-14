@@ -84,7 +84,7 @@ body{
 }
 @media (max-width:991px){
     .header-text {
-        top: 60%;
+        top: 40%;
         
     }
 
@@ -95,7 +95,7 @@ body{
        height: 38px;
    }
    .header-text {
-       top: 47%;
+       top: 30%;
        
    }
 
@@ -107,7 +107,7 @@ body{
         
     }
     .header-text {
-        top: 37%;
+        top: 20%;
         
     }
 }

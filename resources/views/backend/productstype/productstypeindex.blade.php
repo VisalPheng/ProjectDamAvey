@@ -30,7 +30,7 @@
         <tr>
             <td>{{$protype->id}}</td>
             <td>{{$protype->name}}</td>
-            <td>{{$protype->description}}</td>
+            <td>{!!Str::limit($protype->description, 300, ' (...)')!!}</td>
             <td width="100px">{{$protype->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productstype.detail',$protype->id) }}" class="btn btn-info">Detail</a>

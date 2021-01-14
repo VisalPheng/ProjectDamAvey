@@ -30,7 +30,7 @@
         <tr>
             <td>{{$productsregion->id}}</td>
             <td>{{$productsregion->name}}</td>
-            <td>{{$productsregion->description}}</td>
+            <td>{!!Str::limit($productsregion->description, 300, ' (...)')!!}</td>
             <td width="100px">{{$productsregion->created_at}}</td>
             <td width="300px">
                 <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-info ">Detail</a>

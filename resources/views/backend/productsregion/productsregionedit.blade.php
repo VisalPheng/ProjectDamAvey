@@ -37,7 +37,7 @@
 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea rows="5" class="form-control" id="pdesc" name="description" value="{{$productsregion->description}}"></textarea>
+                    <textarea rows="5" class="form-control" id="pdesc" name="description">{{$productsregion->description}}</textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">

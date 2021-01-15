@@ -31,8 +31,8 @@ body{
 
 .back a{
     display: block;
-    text-align: right; 
-    font-size: 18px; 
+    text-align: right;
+    font-size: 18px;
     color: black;
 }
 
@@ -85,7 +85,7 @@ body{
 @media (max-width:991px){
     .header-text {
         top: 40%;
-        
+
     }
 
 }
@@ -96,7 +96,7 @@ body{
    }
    .header-text {
        top: 30%;
-       
+
    }
 
 }
@@ -104,10 +104,10 @@ body{
 @media (max-width: 575px) {
     .header-text h1{
         font-size: 25px;
-        
+
     }
     .header-text {
         top: 20%;
-        
+
     }
 }
